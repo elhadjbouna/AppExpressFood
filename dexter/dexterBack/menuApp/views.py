@@ -62,6 +62,7 @@ def CarteDuJourApi(request,id=0):
         CarteDuJour.delete()
         return JsonResponse("Deleted Successfully",safe=False)
 
+
 @csrf_exempt
 def DesertApi(request,id=0):
     if request.method=='GET':
